@@ -63,7 +63,7 @@ def Book():
                 cur = con.cursor()
                 cur.execute("INSERT into Booking (name, email, Phone2,cars,Car2, model2, FuelType,Kilo2) values (?,?,?,?,?,?,?,?)",(name, email, Phone2,cars,Car2, model2, FuelType,Kilo2))
                 con.commit()
-                msg = "Booking is done successfully"
+                
 
         except:
             con.rollback()
