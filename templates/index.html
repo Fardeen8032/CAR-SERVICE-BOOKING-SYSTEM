@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+
+
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="header" id="mybutton">
+        <a href="/" class="logo"><span>RNZ </span>SERVICE STATION</a>
+        <div class="header-right">
+            <a href="/">Home</a>
+            <a href="#Service">Service</a>
+            <a href="#Book">Booking</a>
+            <a href="#Contactus">Contact</a>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="../static/img/home2.jpg" />
+        <div class="hero-text">
+            <h1>Looking for car service?</h1>
+            <p>Get a free quote and let proffessional do the work</p>
+            <button><a href="#Service">EXPLORE SERVICE</a></button>
+        </div>
+    </div>
+    <div class="service" id="Service">
+        <h6>Our <span>Service</span></h6>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, quaerat autem, in cumque atque iste
+            saepe non delectus blanditiis impedit corrupti nemo aliquid, ipsam aperiam maxime ut soluta ducimus
+            quasi eius. Soluta, quam? Eaque.
+        </p>
+
+    </div>
+    <div class="row">
+        <div class="column1">
+            <div class="card1">
+                <div class="imgcard1">
+                  <img src="../static/img/preventive-measures.jpg" style="width:100%">
+                </div>
+                <div class="textcard1">
+                  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                </div>
+                <div class="btn3">
+                    <form action="/service1" method="post">
+                        <button>Read more</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="column2">
+            <div class="card2">
+                <div class="imgcard2">
+                  <img src="../static/img/home.jpg" style="width:100%">
+                </div>
+                <div class="textcard2">
+                  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                </div>
+                <div class="btn2">
+                    <form action="/service2" method="post">
+                        <button>Read more</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="column3">
+            <div class="card3">
+                <div class="imgcard3">
+                  <img src="../static/img/car-care.jpg" style="width:100%">
+                </div>
+                <div class="textcard3">
+                  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                </div>
+                <div class="btn3">
+                    <form action="/service3" method="post">
+                        <button>Read more</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="Book">
+        <p>
+            We aim to make car repair and service exprience straightforward by
+            providing service like repairing, servicing and maintaing - lending our
+            expertise in all form.
+        </p>
+    </div>
+
+    <div class="side" id="Book">
+        <div class="side1">
+            <img src="../static/img/body-repair.jpg" alt="img" />
+        </div>
+        <div class="side2">
+            <div class="innerside">
+
+                <p>
+                    Enjoy car repair and maintainence at your home or office.It's easy as 1 2 3
+                    <ol>
+                        <li id="e1"><strong>CHOOSE A SERVICE</strong><br>
+                            <div class="d1">
+                                <p>Choose a perfect service for your car</p>
+                            </div>
+                        </li>
+                        <li id="e2"><strong>BOOK AN APPOINTMENT</strong><br>
+                            <p>Choose a perfect service for your car</p>
+                        </li>
+                        <li id="e3"><strong>GET YOUR CAR FIX</strong><br>
+                            <p>No more waiting needed, our representative take care of everything on their own</p>
+                        </li>
+                    </ol>
+                </p>
+            <form action="/book" method="post">
+                <button>BOOK SERVICE</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="Contactus">
+        <div class="contact1">
+            <div class="innercontact">
+                <div class="innercontactchild1">
+                    <h2>Contact Us</h2>
+                </div>
+                <div class="innercontactchild2">
+                    <p>Get in touch with us.Fill out the form with your query </p>
+                </div>
+            </div>
+        </div>
+        <div class="contact2">
+            <div class="innercontact2child1">
+                <div class="contactform">
+                    <form action="/" method='POST'>
+                        <div class="firstname">
+                            <label for="fname" id="fname1">First name</label><br>
+                            <input type="text" name="fname" id="fname2" >
+                        </div>
+                        <div class="lastname">
+                            <label for="lname" id="lname1">Last name</label><br>
+                            <input type="text" name="lname2" id="lname2" >
+                        </div>
+                        <div class="Email">
+                            <label for="ename" id="ename1">Email</label><br>
+                            <input type="text" name="ename2" id="ename2">
+                        </div>
+                        <div class="text">
+                            <label for="text" id="text1">How can we help you?</label><br>
+                            <textarea name="text" id="text2" ></textarea>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" id="subbtn" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="myBtn" onclick="Topfunct()">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+
+
+
+
+
+
+    <div class="footer">
+        <p>Copyright &#169; .All Rights Reserved</p>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

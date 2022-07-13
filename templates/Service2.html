@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="{{ url_for('static', filename='css/Service.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="header" id="mybutton">
+        <a href="/" class="logo"><span>RNZ </span>SERVICE STATION</a>
+        <div class="header-right">
+            <a href="/">Home</a>
+            <a href="/">Service</a>
+            <a href="/">Booking</a>
+            <a href="/">Contact</a>
+        </div>
+    </div>
+
+    <div class="main-div">
+        <div class="inner-div">
+            <div class="half1">
+                <img src="../static/img/home.jpg" alt="img">
+            </div>
+            <div class="half2">
+                <div class="innerside">
+                    <p><span>Body Repair Service</span>
+
+                            <p id="e1">Paint scrathes and dents degrades the appearence of your car?</p>
+                                Opt for RNZ car mechanic body repair service
+                                The service includes:
+                                <ul>
+                                    <li>Car dent repair</li>
+                                    <li>Car painting</li>
+                                    <li>Complete car body repair service</li>
+                                </ul>
+                    </p>
+
+                    <form action="/book" method="post">
+                        <button>BOOK SERVICE</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>Copyright &#169; .All Rights Reserved</p>
+    </div>
+</body>
+</html>

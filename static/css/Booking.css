@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #bdf2d5;
+}
+.header {
+  overflow: hidden;
+  background-color: #37e2d5;
+  padding: 20px 10px;
+}
+.header-right {
+  float: right;
+  padding: 0 60px;
+}
+.header-right a:hover {
+  background: #eee;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 15px;
+  font-weight: bold;
+  color: #c70a80;
+}
+.logo span {
+  font-size: 25px;
+  color: #c70a80;
+  font-weight: bold;
+}
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-div {
+  width: 50%;
+  height: 749px;
+  margin: 90px;
+  place-items: center;
+  background-color: #f6fbf4;
+}
+.contactform {
+  position: relative;
+  top: 35px;
+  left: 23px;
+}
+.firstname #fname1 {
+  font-size: 16px;
+  font-weight: 100;
+}
+.firstname #fname2 {
+  height: 45px;
+  margin-top: 11px;
+  border-radius: 3px;
+  border: 1px solid;
+  width: 334px;
+}
+.Email {
+  position: relative;
+  bottom: 75px;
+  margin: 0 380px;
+}
+.Email #ename1 {
+  font-size: 16px;
+  font-weight: 100;
+}
+.Email #ename2 {
+  height: 45px;
+  margin-top: 11px;
+  border-radius: 3px;
+  border: 1px solid;
+  width: 334px;
+}
+.Phone #Phone1 {
+  font-size: 16px;
+  font-weight: 100;
+}
+.Phone {
+  position: relative;
+  bottom: 62px;
+}
+.Phone #Phone2 {
+  height: 45px;
+  margin-top: 11px;
+  border-radius: 3px;
+  border: 1px solid;
+  width: 714px;
+}
+.selectservice {
+  position: relative;
+  bottom: 48px;
+}
+.selectservice #Service1 {
+  font-size: 16px;
+  font-weight: 100;
+}
+.selectservice #cars {
+  height: 45px;
+  margin-top: 11px;
+  border-radius: 3px;
+  border: 1px solid;
+  width: 714px;
+}
+.Carmake {
+  position: relative;
+  bottom: 32px;
+}
+.Carmake #Car1 {
+  font-size: 16px;
+  font-weight: 100;
+}
+.Carmake #Car2 {
+  height: 45px;
+  margin-top: 11px;
+  border-radius: 3px;
+  border: 1px solid;
+  width: 714px;
+}
+.CarModel {
+  position: relative;
+  bottom: 15px;
+}
+.CarModel #model1 {
+  font-size: 16px;
+  font-weight: 100;
+}
+.CarModel #model2 {
+  height: 45px;
+  margin-top: 11px;
+  border-radius: 3px;
+  border: 1px solid;
+  width: 714px;
+}
+.Fuel #Fuel1 {
+  font-size: 16px;
+  font-weight: 100;
+}
+.Fuel #FuelType {
+  height: 45px;
+  margin-top: 11px;
+  border-radius: 3px;
+  border: 1px solid;
+  width: 714px;
+}
+.Kilo {
+  position: relative;
+  top: 15px;
+}
+.Kilo #kilo1 {
+  font-size: 16px;
+  font-weight: 100;
+}
+.Kilo #Kilo2 {
+  height: 45px;
+  margin-top: 11px;
+  border-radius: 3px;
+  border: 1px solid;
+  width: 714px;
+}
+.submit #subbtn {
+  position: relative;
+  top: 15px;
+  right: 110px;
+  color: #ffffff !important;
+  font-size: 14px;
+  padding: 15px 37px;
+  border: 0px solid #3866a3;
+  background: #c70a80;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 18px 110px;
+  border-radius: 3px;
+  width: 714px;
+  border: 1px solid;
+  font-size: 16px;
+  font-weight: 100;
+}
+.submit #subbtn:hover {
+  opacity: 1;
+}
+
+.footer {
+  padding: 5px;
+  left: 0;
+  bottom: 0;
+  color: #ffffff;
+  text-align: center;
+  background: #590696;
+}
+
+

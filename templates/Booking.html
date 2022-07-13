@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="{{ url_for('static', filename='css/Booking.css') }}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header" id="mybutton">
+      <a href="/" class="logo"><span>RNZ </span>SERVICE STATION</a>
+      <div class="header-right">
+        <a href="/">Home</a>
+        <a href="/">Service</a>
+        <a href="/">Booking</a>
+        <a href="/">Contact</a>
+      </div>
+    </div>
+
+    <div class="main-div">
+      <div class="inner-div">
+        <div class="contactform">
+          <form action="/book" method='POST'>
+            <div class="firstname">
+              <label for="fname" id="fname1">Name</label><br />
+              <input type="text" name="name" id="fname2" placeholder = "Name"/>
+            </div>
+            <div class="Email">
+              <label for="ename" id="ename1">Email</label><br />
+              <input type="email" name="email" id="ename2" placeholder = "abc@gmail.com" />
+            </div>
+            <div class="Phone">
+              <label for="Phonr" id="Phone1">Phone</label><br />
+              <input type="tel" name="Phone2" id="Phone2" placeholder = "987253627"/>
+            </div>
+            <div class="selectservice">
+              <label for="cars" id="Service1">Select a service</label><br/>
+              <select id="cars" name="cars" >
+                <option value="Preventive Maintenance Service">Preventive Maintenance Service</option>
+                <option value="Body Repair Service">Body Repair Service</option>
+                <option value="Car Care Service">Car Care Service</option>
+              </select>
+
+            </div>
+            <div class="Carmake">
+                <label for="Car1" id="Car1">Car Make</label><br />
+                <input type="datalist" name="Car2" id="Car2" placeholder = "Suzuki, Toyota..."/>
+            </div>
+            <div class="CarModel">
+                <label for="model" id="model1">Car Model</label><br/>
+                <input type="text" name="model2" id="model2" placeholder = "Alto, Innova..." />
+            </div>
+            <div class="Fuel">
+                <label for="Fuel" id="Fuel1">Fuel Type</label><br />
+                <select id="FuelType" name="FuelType">
+                    <option value="Petrol">Petrol</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="CNG">CNG</option>
+                </select>
+            </div>
+              <div class="Kilo">
+                <label for="kilometer" id="kilo1">Kilometers ran</label><br />
+                <input type="number" name="Kilo2" id="Kilo2" placeholder = "..km"/>
+              </div>
+            <div class="submit">
+              <input type="submit" id="subbtn" value="Schedule your Appointment" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright &#169; .All Rights Reserved</p>
+    </div>
+  </body>
+</html>
